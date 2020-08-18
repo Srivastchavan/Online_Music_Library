@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Songster - Log In</title>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="style.css">
+      <link rel="icon" type="image/png" href="Icons/favIcon.png">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   </head>
+   <body>
+      <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+         <img src="Icons/favIcon.png" alt="Logo Icon" class="logo">
+         <a class="navbar-brand" id="App" href="#">Songster</a>
+         <button class="navbar-toggler p-0 border-0" type="button" >
+         <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+               <li class="nav-item active" id="first">
+                  <a class="nav-link" href="#" id="login_option">Log In<span id="l_current" class="sr-only">(current)</span></a>
+               </li>
+               <li class="nav-item" id="second">
+                  <a class="nav-link" href="#" id="signin_option">Sign Up</a>
+               </li>
+            </ul>
+         </div>
+      </nav>
+      <div class="bg-img">
+         <div id="box_login">
+            <h1 id="heading">Log In</h1>
+            <form method="post" id="loginForm" action="login.php">
+               <div id="email_division">
+                  <label for="email" class="login_heading">Email</label> <br>
+                  <input required type="email" id="email" name="email" class="textfield">
+                  <div id="email_error"></div>
+               </div>
+               <div id="password_division">
+                  <label class="login_heading">Password</label> <br>
+                  <input required type="password" id="password" name="password" class="textfield">
+                  <div id="password_error"></div>
+               </div>
+               <br/>  
+               <div>
+                  <input type="submit" name="submit_form" value="Log In" class="btn btn-lg btn-primary" id="button1" />
+               </div>
+            </form>
+         </div>
+         <div id="box_signin">
+            <h1 id="Heading1">Sign Up</h1>
+            <form name="signupForm" method="post" id="signupForm">
+               <div id="username_division">
+                  <label class="login_heading">Username</label> <br>
+                  <input required type="text" id="username" name="username" class="textfield">
+                  <div id="username_error"> </div>
+               </div>
+               <div id="email_division">
+                  <label class="login_heading">Email</label> <br>
+                  <input required type="email" id="email2" name="email2" class="textfield">
+                  <div id="email2_error"></div>
+               </div>
+               <div id="password_division">
+                  <label class="login_heading">Password</label> <br>
+                  <input required type="password" id="password2" name="password2" class="textfield">
+                  <div id="password2_error"></div>
+               </div>
+               <br/>
+               <div>
+                  <input type="submit" name="signin" value="SIGN UP" class="btn btn-lg btn-primary" id="button2">
+               </div>
+            </form>
+         </div>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-md5/2.5.0/js/md5.min.js"></script>
+      <script type="text/javascript" src="login.js"></script>
+      <script type="text/javascript" src="signup.js"></script>
+   </body>
+</html>
