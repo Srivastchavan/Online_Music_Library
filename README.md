@@ -11,7 +11,7 @@ User signup Page: Register a new user to the system.
   
   3. Checks if password is strong enough. Defines the rules of having a strong password. (JQuery). 
   
-  4. User passwords should be hashed and hashed version of passwords should be stored in the database.
+  4. User passwords are hashed and hashed version of passwords are stored in the database.
   
 User login Page
   
